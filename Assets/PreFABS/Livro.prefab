@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 2999739184857707917}
   - component: {fileID: 2999739184857707916}
   - component: {fileID: 2999739184857707919}
-  m_Layer: 5
+  - component: {fileID: 3845338684629471238}
+  m_Layer: 8
   m_Name: Livro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -121,3 +122,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &3845338684629471238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2999739184857707906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c2f0ddf98fc09342b6deb8a30070d85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  whoAmI: 
+  mova: {fileID: 0}
+  animator: {fileID: 2999739184857707919}
+  emptyGameObjectPrefab: {fileID: 2999739184857707906}
+  First: 0

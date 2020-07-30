@@ -12,7 +12,7 @@ public class SystemController : MonoBehaviour{
         if (Input.GetKey(KeyCode.Escape)){
             Application.Quit();
         }
-        else if(Input.GetKey(KeyCode.K)){
+        else if(Input.GetKey(KeyCode.B)){
             SceneManager.LoadScene(cena);
         }
     }

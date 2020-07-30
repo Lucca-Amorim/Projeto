@@ -1,7 +1,12 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - BookEffect
+    - CharacterController2D
+    - InstantiateBooks
+    - MenuPrincipal
     - NextScene
+    - PlayerMovement
     - SystemController
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
@@ -13,6 +18,12 @@ ScriptsOnlyBuild:
     - UnityEditor.Tilemaps.TileDragAndDropManager
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
+    Unity.TextMeshPro.dll:
+    - TMPro.TMP_FontAsset
+    - TMPro.TMP_Settings
+    - TMPro.TMP_SpriteAsset
+    - TMPro.TMP_StyleSheet
+    - TMPro.TextMeshProUGUI
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
@@ -30,6 +41,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
+    - UnityEngine.UI.Slider
     - UnityEngine.UI.Text
   sceneClasses:
     Assets/Scenes/Biblioteca.unity:
@@ -39,7 +51,13 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 20
       Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
     - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 50
       Script: {instanceID: 0}
     - Class: 61
       Script: {instanceID: 0}
@@ -54,24 +72,34 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11150}
+      Script: {instanceID: 11194}
     - Class: 114
-      Script: {instanceID: 11172}
+      Script: {instanceID: 11256}
     - Class: 114
-      Script: {instanceID: 11720}
+      Script: {instanceID: 11348}
     - Class: 114
-      Script: {instanceID: 12176}
+      Script: {instanceID: 11540}
     - Class: 114
-      Script: {instanceID: 12874}
+      Script: {instanceID: 11748}
     - Class: 114
-      Script: {instanceID: 13636}
+      Script: {instanceID: 12204}
     - Class: 114
-      Script: {instanceID: 14246}
+      Script: {instanceID: 12906}
+    - Class: 114
+      Script: {instanceID: 13666}
+    - Class: 114
+      Script: {instanceID: 13968}
+    - Class: 114
+      Script: {instanceID: 14278}
+    - Class: 114
+      Script: {instanceID: 14360}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
@@ -94,26 +122,42 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 49
+      Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
+    - Class: 109
+      Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11150}
+      Script: {instanceID: 11194}
     - Class: 114
-      Script: {instanceID: 11172}
+      Script: {instanceID: 11540}
     - Class: 114
-      Script: {instanceID: 11460}
+      Script: {instanceID: 12204}
     - Class: 114
-      Script: {instanceID: 12176}
+      Script: {instanceID: 12256}
     - Class: 114
-      Script: {instanceID: 12874}
+      Script: {instanceID: 12270}
     - Class: 114
-      Script: {instanceID: 13636}
+      Script: {instanceID: 12454}
     - Class: 114
-      Script: {instanceID: 14246}
+      Script: {instanceID: 12906}
     - Class: 114
-      Script: {instanceID: 15100}
+      Script: {instanceID: 13250}
+    - Class: 114
+      Script: {instanceID: 13268}
+    - Class: 114
+      Script: {instanceID: 13564}
+    - Class: 114
+      Script: {instanceID: 13666}
+    - Class: 114
+      Script: {instanceID: 13940}
+    - Class: 114
+      Script: {instanceID: 14278}
+    - Class: 114
+      Script: {instanceID: 14320}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -130,13 +174,66 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
+    Assets/Scenes/TestesJonas.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 50
+      Script: {instanceID: 0}
+    - Class: 61
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11194}
+    - Class: 114
+      Script: {instanceID: 11348}
+    - Class: 114
+      Script: {instanceID: 11486}
+    - Class: 114
+      Script: {instanceID: 11540}
+    - Class: 114
+      Script: {instanceID: 11748}
+    - Class: 114
+      Script: {instanceID: 12204}
+    - Class: 114
+      Script: {instanceID: 12906}
+    - Class: 114
+      Script: {instanceID: 13666}
+    - Class: 114
+      Script: {instanceID: 13968}
+    - Class: 114
+      Script: {instanceID: 14278}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
   scriptHashData:
-  - hash:
-      serializedVersion: 2
-      Hash: 89f9a1b4c64db9559e39f4a2e3bfaadd
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Image
   - hash:
       serializedVersion: 2
       Hash: 4bc4346a71a8df53a6b106f68ef3a190
@@ -157,10 +254,22 @@ ScriptsOnlyBuild:
     className: AudioPlayableAsset
   - hash:
       serializedVersion: 2
+      Hash: 7a1ffbc62f8cef0e81369b34d32c0e43
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: InstantiateBooks
+  - hash:
+      serializedVersion: 2
       Hash: 626925ef558787b2d85c809198164d19
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_Dropdown
+  - hash:
+      serializedVersion: 2
+      Hash: 4df9f7f58b26785a1bb6bf34b9c02952
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CharacterController2D
   - hash:
       serializedVersion: 2
       Hash: e7a73f5f78ba6445195ec23b74a1ce2d
@@ -209,6 +318,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: TouchInputModule
+  - hash:
+      serializedVersion: 2
+      Hash: 89f9a1b4c64db9559e39f4a2e3bfaadd
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Image
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -361,6 +476,12 @@ ScriptsOnlyBuild:
     className: TMP_SpriteAsset
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MenuPrincipal
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -371,6 +492,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Selectable
+  - hash:
+      serializedVersion: 2
+      Hash: 67bad273a71169afa7a4378cf7ccc85e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: NextScene
   - hash:
       serializedVersion: 2
       Hash: b3ab2106268377ffe25dd18ac23dca28
@@ -487,12 +614,6 @@ ScriptsOnlyBuild:
     className: Physics2DRaycaster
   - hash:
       serializedVersion: 2
-      Hash: 13f8f373b951cbaf0f891949929b196a
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: force
-  - hash:
-      serializedVersion: 2
       Hash: c1933cc0a2f4ff6eb13333347497beb3
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -533,6 +654,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_StyleSheet
+  - hash:
+      serializedVersion: 2
+      Hash: 7eeacb576258557b23c8a62491c79650
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerMovement
   - hash:
       serializedVersion: 2
       Hash: 21d73eda81c18eacd2c91ad5dfaf2e32
@@ -625,18 +752,19 @@ ScriptsOnlyBuild:
     className: ToggleGroup
   - hash:
       serializedVersion: 2
+      Hash: 04a5fa0e36312bcb17f5727344cbbaef
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BookEffect
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 67bad273a71169afa7a4378cf7ccc85e
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: NextScene
   platform: 19
   scenePathNames:
   - Assets/Scenes/Menu.unity
   - Assets/Scenes/Biblioteca.unity
+  - Assets/Scenes/TestesJonas.unity
   playerPath: C:/Users/jonas/Documents/GitHub/2garotas/Projeto/BUILD/3Garotas.exe

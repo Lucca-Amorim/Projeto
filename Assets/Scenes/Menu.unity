@@ -692,8 +692,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1810743334}
-        m_MethodName: PlayGame
+      - m_Target: {fileID: 500715139}
+        m_MethodName: OnChange
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -752,7 +752,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eddc4b167c7e9e94492cbe5e0f81c798, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cena: 1
+  cena: 2
 --- !u!1 &599221853
 GameObject:
   m_ObjectHideFlags: 0

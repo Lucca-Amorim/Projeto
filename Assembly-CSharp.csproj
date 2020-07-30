@@ -36,8 +36,10 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\MenuPrincipal.cs" />
+     <Compile Include="Assets\Scripts\BookEffect.cs" />
      <Compile Include="Assets\Scripts\CharacterController2D.cs" />
+     <Compile Include="Assets\Scripts\InstantiateBooks.cs" />
+     <Compile Include="Assets\Scripts\MenuPrincipal.cs" />
      <Compile Include="Assets\Scripts\NextScene.cs" />
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\SystemController.cs" />
