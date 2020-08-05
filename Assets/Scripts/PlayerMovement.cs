@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour {
+public class PlayerMovement : MonoBehaviour{
 
 	public CharacterController2D controller;
 	private Rigidbody2D rigidbody2D;
@@ -31,7 +31,6 @@ public class PlayerMovement : MonoBehaviour {
 		// Move our character
 		controller.Move(horizontalMove * Time.fixedDeltaTime, crouch, jump);
 		jump = false;
-		//Debug.Log(personagem);
 	}
 
 	public void isSelected(){
@@ -48,7 +47,7 @@ public class PlayerMovement : MonoBehaviour {
 	public void characterHandle(){
 		if((Input.GetKeyDown(KeyCode.J)) || (Input.GetKeyDown(KeyCode.K))  || (Input.GetKeyDown(KeyCode.L))){
 			if(Input.GetKeyDown(KeyCode.J)){
-			personagemAtual = "Julia";
+				personagemAtual = "Julia";
 			}else if(Input.GetKeyDown(KeyCode.K)){
 				personagemAtual = "Kevin";
 			}else if(Input.GetKeyDown(KeyCode.L)){
@@ -57,4 +56,10 @@ public class PlayerMovement : MonoBehaviour {
 			isSelected();
 		}
 	}
+
+	public void trocaCharacter(string nome){
+		personagemAtual = nome;
+		isSelected();
+	}
+
 }
