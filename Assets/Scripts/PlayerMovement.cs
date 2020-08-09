@@ -29,17 +29,15 @@ public class PlayerMovement : MonoBehaviour{
 
 	void FixedUpdate(){
 		// Move our character
-		controller.Move(horizontalMove * Time.fixedDeltaTime, crouch, jump);
-		jump = false;
+		if(Selected){
+			controller.Move(horizontalMove * Time.fixedDeltaTime, crouch, jump);
+			jump = false;
+		}
 	}
 
 	public void isSelected(){
-		gameObject.transform.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
-		gameObject.GetComponent<BoxCollider2D>().enabled = false;
 		Selected = false;
 		if(personagem == personagemAtual){
-			gameObject.GetComponent<BoxCollider2D>().enabled = true;
-			gameObject.transform.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
 			Selected = true;
 		}
 	}

@@ -18,9 +18,9 @@ TagManager:
   - Enemies
   - Boss
   - Limites
-  - 
-  - 
-  - 
+  - BG
+  - Triggers
+  - Consumiveis
   - 
   - 
   - 
@@ -52,4 +52,7 @@ TagManager:
     locked: 0
   - name: UI
     uniqueID: 3608156407
+    locked: 0
+  - name: Triggers
+    uniqueID: 3140845055
     locked: 0

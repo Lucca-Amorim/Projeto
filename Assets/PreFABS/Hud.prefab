@@ -382,7 +382,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 8656243303476033533, guid: 4f291f63b66207f4bab244857af870ab,
+          type: 3}
         m_MethodName: trocaCharacter
         m_Mode: 5
         m_Arguments:
@@ -393,7 +394,8 @@ MonoBehaviour:
           m_StringArgument: Lilly
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 6545561395251571623, guid: e2e7e38bf4c27cb4a8764e9e137d38b5,
+          type: 3}
         m_MethodName: trocaCharacter
         m_Mode: 5
         m_Arguments:
@@ -404,7 +406,8 @@ MonoBehaviour:
           m_StringArgument: Lilly
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 979840693028499820, guid: 31103a7664230774aa1c66ef9bb3928c,
+          type: 3}
         m_MethodName: trocaCharacter
         m_Mode: 5
         m_Arguments:
@@ -608,7 +611,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 8656243303476033533, guid: 4f291f63b66207f4bab244857af870ab,
+          type: 3}
         m_MethodName: trocaCharacter
         m_Mode: 5
         m_Arguments:
@@ -619,7 +623,8 @@ MonoBehaviour:
           m_StringArgument: Kevin
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 6545561395251571623, guid: e2e7e38bf4c27cb4a8764e9e137d38b5,
+          type: 3}
         m_MethodName: trocaCharacter
         m_Mode: 5
         m_Arguments:
@@ -630,7 +635,8 @@ MonoBehaviour:
           m_StringArgument: Kevin
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 979840693028499820, guid: 31103a7664230774aa1c66ef9bb3928c,
+          type: 3}
         m_MethodName: trocaCharacter
         m_Mode: 5
         m_Arguments:
@@ -824,7 +830,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 8656243303476033533, guid: 4f291f63b66207f4bab244857af870ab,
+          type: 3}
         m_MethodName: trocaCharacter
         m_Mode: 5
         m_Arguments:
@@ -835,7 +842,8 @@ MonoBehaviour:
           m_StringArgument: Julia
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 6545561395251571623, guid: e2e7e38bf4c27cb4a8764e9e137d38b5,
+          type: 3}
         m_MethodName: trocaCharacter
         m_Mode: 5
         m_Arguments:
@@ -846,7 +854,8 @@ MonoBehaviour:
           m_StringArgument: Julia
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 979840693028499820, guid: 31103a7664230774aa1c66ef9bb3928c,
+          type: 3}
         m_MethodName: trocaCharacter
         m_Mode: 5
         m_Arguments:

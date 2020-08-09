@@ -5,12 +5,20 @@ using UnityEngine.UI;
 
 public class Health : MonoBehaviour{
     public int vida;
-    public int nHearts;
+    public static int nHearts;
 
     public Image[] hearts;
     public Sprite fHearts;
     public Sprite eHearts;
 
+    void Start(){
+        try{
+            nHearts = 3;
+        }catch (System.Exception){
+            
+            throw;
+        }
+    }
     void LateUpdate(){
         for (int i = 0; i < hearts.Length; i++){
             if(vida > nHearts){
