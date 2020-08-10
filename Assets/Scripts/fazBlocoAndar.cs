@@ -8,10 +8,15 @@ public class fazBlocoAndar : MonoBehaviour{
     public bool lado = false, andando = false;
     public bool voaCima = false, voaLados = false;
     public GameObject Game;
+
+    private int leftRight;
     
     void Start(){
         x = transform.position.x;
         y = transform.position.y;
+        qualLado();
+        
+
     }
     void LateUpdate(){
         movementHandler();
@@ -28,13 +33,16 @@ public class fazBlocoAndar : MonoBehaviour{
         
     }
 
-    void OnCollisionExit2D(Collision2D other) {
-        other.collider.transform.SetParent(Game.transform);
+    void OnCollisionExit2D(Collision2D other){
+        if(other.gameObject.layer == 9){
+            other.collider.transform.SetParent(Game.transform);
+        }
     }
 
     private void trocaLado(){
         lado = !lado;
     }
+
     private void movementHandler(){
         transform.position = new Vector3(x, y, transform.position.z);
         if(lado){
@@ -51,6 +59,13 @@ public class fazBlocoAndar : MonoBehaviour{
             if(voaCima){
                 y -=andar;
             }
+        }
+    }
+
+    private void qualLado(){
+        leftRight = Random.Range(0, 10);
+        if(leftRight % 2 ==0){
+            trocaLado();
         }
     }
 }

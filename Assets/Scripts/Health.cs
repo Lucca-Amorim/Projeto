@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class Health : MonoBehaviour{
-    public int vida;
+    public static int vida;
     public static int nHearts;
 
     public Image[] hearts;
@@ -14,6 +14,7 @@ public class Health : MonoBehaviour{
     void Start(){
         try{
             nHearts = 3;
+            vida = 3;
         }catch (System.Exception){
             
             throw;

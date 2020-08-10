@@ -13,6 +13,7 @@ ScriptsOnlyBuild:
     - ResolutionDetector
     - SystemController
     - fazBlocoAndar
+    - vidaEditor
     Cinemachine.dll:
     - Cinemachine.CinemachineBrain
     - Cinemachine.CinemachineFramingTransposer
@@ -99,17 +100,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11804}
     - Class: 114
-      Script: {instanceID: 12288}
+      Script: {instanceID: 12292}
     - Class: 114
-      Script: {instanceID: 13924}
+      Script: {instanceID: 13928}
     - Class: 114
-      Script: {instanceID: 13956}
+      Script: {instanceID: 13960}
     - Class: 114
-      Script: {instanceID: 14252}
+      Script: {instanceID: 14256}
     - Class: 114
-      Script: {instanceID: 14574}
+      Script: {instanceID: 14578}
     - Class: 114
-      Script: {instanceID: 14662}
+      Script: {instanceID: 14666}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -162,35 +163,35 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11580}
     - Class: 114
-      Script: {instanceID: 12104}
+      Script: {instanceID: 12108}
     - Class: 114
-      Script: {instanceID: 12288}
+      Script: {instanceID: 12292}
     - Class: 114
-      Script: {instanceID: 12346}
+      Script: {instanceID: 12350}
     - Class: 114
-      Script: {instanceID: 12362}
+      Script: {instanceID: 12366}
     - Class: 114
-      Script: {instanceID: 12554}
+      Script: {instanceID: 12558}
     - Class: 114
-      Script: {instanceID: 12662}
+      Script: {instanceID: 12666}
     - Class: 114
-      Script: {instanceID: 13452}
+      Script: {instanceID: 13456}
     - Class: 114
-      Script: {instanceID: 13472}
+      Script: {instanceID: 13476}
     - Class: 114
-      Script: {instanceID: 13814}
+      Script: {instanceID: 13818}
     - Class: 114
-      Script: {instanceID: 13924}
+      Script: {instanceID: 13928}
     - Class: 114
-      Script: {instanceID: 14222}
+      Script: {instanceID: 14226}
     - Class: 114
-      Script: {instanceID: 14538}
+      Script: {instanceID: 14542}
     - Class: 114
-      Script: {instanceID: 14574}
+      Script: {instanceID: 14578}
     - Class: 114
-      Script: {instanceID: 14598}
+      Script: {instanceID: 14602}
     - Class: 114
-      Script: {instanceID: 14622}
+      Script: {instanceID: 14626}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -241,31 +242,33 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11580}
     - Class: 114
-      Script: {instanceID: 12288}
+      Script: {instanceID: 12022}
     - Class: 114
-      Script: {instanceID: 12374}
+      Script: {instanceID: 12062}
     - Class: 114
-      Script: {instanceID: 12554}
+      Script: {instanceID: 12292}
     - Class: 114
-      Script: {instanceID: 12892}
+      Script: {instanceID: 12378}
     - Class: 114
-      Script: {instanceID: 12992}
+      Script: {instanceID: 12558}
     - Class: 114
-      Script: {instanceID: 13550}
+      Script: {instanceID: 12896}
     - Class: 114
-      Script: {instanceID: 13924}
+      Script: {instanceID: 12996}
     - Class: 114
-      Script: {instanceID: 13956}
+      Script: {instanceID: 13554}
     - Class: 114
-      Script: {instanceID: 14252}
+      Script: {instanceID: 13928}
     - Class: 114
-      Script: {instanceID: 14520}
+      Script: {instanceID: 13960}
     - Class: 114
-      Script: {instanceID: 14574}
+      Script: {instanceID: 14256}
     - Class: 114
-      Script: {instanceID: 16380}
+      Script: {instanceID: 14524}
     - Class: 114
-      Script: {instanceID: 35834}
+      Script: {instanceID: 14578}
+    - Class: 114
+      Script: {instanceID: 32392}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -316,13 +319,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11804}
     - Class: 114
-      Script: {instanceID: 12288}
+      Script: {instanceID: 12292}
     - Class: 114
-      Script: {instanceID: 13924}
+      Script: {instanceID: 13928}
     - Class: 114
-      Script: {instanceID: 14252}
+      Script: {instanceID: 14256}
     - Class: 114
-      Script: {instanceID: 14574}
+      Script: {instanceID: 14578}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -602,10 +605,22 @@ ScriptsOnlyBuild:
     className: PixelPerfectCamera
   - hash:
       serializedVersion: 2
+      Hash: d88d20184c14a64e194ef85ac4e91b83
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ColetorDeVidas
+  - hash:
+      serializedVersion: 2
       Hash: 5ab533713adae59372fb3e10a585c186
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: AnimationPlayableAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 5bc00bc8ad507e1fe035ba2aa099cbdb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: fazBlocoAndar
   - hash:
       serializedVersion: 2
       Hash: 666a1bc8d46f314c018ffaaa3f6628d1
@@ -986,7 +1001,7 @@ ScriptsOnlyBuild:
     className: GraphicRaycaster
   - hash:
       serializedVersion: 2
-      Hash: 2c6d0d0293cd474291d86156d843972e
+      Hash: f35edee317ff0e2ce00b6d58c9c453b3
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Health
@@ -1178,16 +1193,10 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: 5bc00bc8ad507e1fe035ba2aa099cbdb
+      Hash: ca2a05b41883cf0563ba3345300ac831
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: fazBlocoAndar
-  - hash:
-      serializedVersion: 2
-      Hash: a09ba3d269298299ca7e7add20d6c8bf
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ColetorDeVidas
+    className: vidaEditor
   platform: 19
   scenePathNames:
   - Assets/Scenes/Menu.unity
