@@ -8,29 +8,38 @@ public class fazBlocoAndar : MonoBehaviour{
     public bool lado = false, andando = false;
     public bool voaCima = false, voaLados = false;
     public GameObject Game;
+    public BoxCollider2D normal; //usa como chao, vai fazer a interação com os triggers
+    public PolygonCollider2D pulaPula; //usado para descolar o player e fazer ele bater e sair da perto
 
     private int leftRight;
-    
+
+    /*Layers List*/
+    private int playersLayer = 9;
+    private int triggersLayer = 14;
+ 
     void Start(){
         x = transform.position.x;
         y = transform.position.y;
         qualLado();
-        
-
     }
+
     void LateUpdate(){
         movementHandler();
     }
 
     void OnCollisionEnter2D(Collision2D collision){
-        if(collision.gameObject.layer == 14){
+
+        if(collision.gameObject.layer == triggersLayer){
             trocaLado();
-        }else if(collision.gameObject.layer == 9){
+        }
+        if(collision.gameObject.layer == playersLayer){
             andando = true;
             collision.collider.transform.SetParent(transform);
         }
         
-        
+        //if (collision.collider.GetType() == typeof(BoxCollider2D)){
+            
+        //}
     }
 
     void OnCollisionExit2D(Collision2D other){

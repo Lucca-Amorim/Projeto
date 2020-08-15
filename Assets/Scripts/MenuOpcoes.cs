@@ -14,6 +14,6 @@ public class MenuOpcões : MonoBehaviour
 
     public void SetFullscreen (bool isFullscreen)
     {
-        Screen.fullscreen = isFullscreen;
+        Screen.fullScreen = isFullscreen;
     }
 }
