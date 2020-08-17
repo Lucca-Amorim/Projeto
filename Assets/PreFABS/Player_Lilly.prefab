@@ -40,7 +40,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1, y: 1}
+  m_SizeDelta: {x: 1.9393697, y: 4.121129}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &979840693028499822
 SpriteRenderer:
@@ -135,6 +135,7 @@ MonoBehaviour:
   controller: {fileID: 979840693028499823}
   runSpeed: 30.4
   Selected: 0
+  descansando: 0
   personagem: Lilly
   personagemAtual: 
 --- !u!50 &979840693028499821
