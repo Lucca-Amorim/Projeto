@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour{
 	/* Objetos*/
 	public CharacterController2D controller;
-	private Rigidbody2D rigidbody2D;
+	private new Rigidbody2D rigidbody2D;
 	private BoxCollider2D boxCollider2D;
 	
 	/* Floats */
@@ -17,7 +17,6 @@ public class PlayerMovement : MonoBehaviour{
 	bool jump = false;
 	bool crouch = false;
 	public bool descansando = false;
-	private bool foiAtivado = false;
 	public static bool boradescer = false;
 
 	/* strings */
@@ -39,9 +38,6 @@ public class PlayerMovement : MonoBehaviour{
 	}
 
 	void FixedUpdate(){
-		// Move our character
-		if(foiAtivado) 
-			handlerdeEscada();
 		if(Selected){
 			controller.Move(horizontalMove * Time.fixedDeltaTime, crouch, jump);
 			jump = false;
@@ -80,26 +76,8 @@ public class PlayerMovement : MonoBehaviour{
 	private void desceuEscada(){
 		descansando = true;
 	}
-	private void handlerdeEscada(){
-		if(Input.GetKeyDown(KeyCode.E)){
-			Debug.Log("apertei");
-			//desceuEscada();
-			boradescer = true;
-		}
-	}
 
-	private void OnCollisionEnter2D(Collision2D other) {
-		if(other.gameObject.layer == Layers.breakPoint){
-			Debug.Log("ta encostando");
-			foiAtivado = true;
-		}
-	}
 
-	private void OnCollisionExit2D(Collision2D other) {
-		if(other.gameObject.layer == Layers.breakPoint){
-			foiAtivado = false;
-		}
-	}
 	
 
 }

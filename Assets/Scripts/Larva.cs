@@ -3,10 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Larva : enemego{
-    private int vida;
+    private new int vida;
     void start(){
         vida = enemego.vida;
     }
-    
-   
 }

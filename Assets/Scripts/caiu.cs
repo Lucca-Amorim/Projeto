@@ -4,37 +4,38 @@ using UnityEngine;
 
 
 public class caiu : MonoBehaviour{
-    public float y, total;
-    public float vel = 0.1f;
-    public RectTransform pos;
-    void Start(){
-        pos = GetComponent<RectTransform>();
-        y = pos.localPosition.y;
-        total = y / 4.140288f;
-        vel = 0.03f;
-    }
-    
-    void LateUpdate(){
-        if(PlayerMovement.boradescer)
-            cuidaDescer();
+
+    float descida;
+    bool caindo;
+    float velocidade = 0.07f;
+    public bool pronto;
+
+    public void Start(){
+        descida = transform.position.y * 1.64f;
     }
 
-    public void cuidaDescer(){
-        pos.localPosition = new Vector2(pos.localPosition.x, y);
-        if(y > total){
-            y -= vel;
-        }else{
-            PlayerMovement.boradescer = false;
-        }        
+    public void Update(){
+        if(caindo){
+            if(descida < transform.position.y){
+                transform.position = new Vector3(transform.position.x, 
+                                                transform.position.y - velocidade, 
+                                                transform.position.z);
+            }else{
+                caindo = false;
+                pronto = true;
+            }
+        }
     }
 
 
 
-
-
-
-
-
+    public void OnCollisionStay2D(Collision2D collision){
+        if(collision.gameObject.layer == Layers.playersLayer){
+		    if(Input.GetKeyDown(KeyCode.E)){
+                caindo = true;
+            }
+        }
+    }
 
 
 

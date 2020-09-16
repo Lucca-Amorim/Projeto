@@ -8,7 +8,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8656243301487874782}
+  - component: {fileID: 624109491339857206}
   m_Layer: 9
   m_Name: GroundCheck
   m_TagString: Untagged
@@ -16,25 +16,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &8656243301487874782
-RectTransform:
+--- !u!4 &624109491339857206
+Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8656243301487874783}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -1.99, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 8656243303476033025}
-  m_RootOrder: 1
+  m_Father: {fileID: 2665783867878980371}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -1.99}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &8656243303014483988
 GameObject:
   m_ObjectHideFlags: 0
@@ -43,7 +38,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8656243303014483987}
+  - component: {fileID: 4780499950089433893}
   m_Layer: 9
   m_Name: CellingCheck
   m_TagString: Untagged
@@ -51,25 +46,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &8656243303014483987
-RectTransform:
+--- !u!4 &4780499950089433893
+Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8656243303014483988}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 1.49, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 8656243303476033025}
-  m_RootOrder: 0
+  m_Father: {fileID: 2665783867878980371}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 1.49}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &8656243303476033026
 GameObject:
   m_ObjectHideFlags: 0
@@ -78,7 +68,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8656243303476033025}
+  - component: {fileID: 2665783867878980371}
   - component: {fileID: 8656243303476033535}
   - component: {fileID: 8656243303476033532}
   - component: {fileID: 8656243303476033533}
@@ -91,8 +81,8 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &8656243303476033025
-RectTransform:
+--- !u!4 &2665783867878980371
+Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -100,18 +90,13 @@ RectTransform:
   m_GameObject: {fileID: 8656243303476033026}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.2905223, y: 0.2905223, z: 0.2756624}
   m_Children:
-  - {fileID: 8656243303014483987}
-  - {fileID: 8656243301487874782}
+  - {fileID: 624109491339857206}
+  - {fileID: 4780499950089433893}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 2.0349755, y: 4.104926}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &8656243303476033535
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -148,9 +133,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -1135299413
+  m_SortingLayer: 3
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: ee33c52ed3f6a41438ca88c8f873cfa7, type: 3}
   m_Color: {r: 0.96470594, g: 0.2901961, b: 0.15294118, a: 0.8666667}
   m_FlipX: 1
@@ -174,15 +159,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fa0c4f0675786449baaaa78d4da3ca2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_JumpForce: 600
+  m_JumpForce: 450
   m_CrouchSpeed: 0.36
   m_MovementSmoothing: 0.05
   m_AirControl: 1
   m_WhatIsGround:
     serializedVersion: 2
-    m_Bits: 7479
-  m_GroundCheck: {fileID: 8656243301487874782}
-  m_CeilingCheck: {fileID: 8656243303014483987}
+    m_Bits: 138551
+  m_GroundCheck: {fileID: 624109491339857206}
+  m_CeilingCheck: {fileID: 4780499950089433893}
   m_CrouchDisableCollider: {fileID: 0}
   OnLandEvent:
     m_PersistentCalls:

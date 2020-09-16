@@ -8,41 +8,35 @@ public abstract class enemego : MonoBehaviour{
     public SpriteRenderer fota;
     private float xDele, yDele;
     public float remapagosMarquinhos;
-    protected bool direita = false;
+    protected bool direita = true;
     public static int vida = 10;
 
     void Awake(){
         fota = GetComponent<SpriteRenderer>();
     }
 
-
     void Start(){
         xDele = transform.position.x;
         yDele = transform.position.y;
     }
-
     void LateUpdate(){
         cuidaDeAndar();
         
     }
     private void cuidaDeAndar(){
-        transform.position = new Vector3(xDele, transform.position.y, transform.position.z);
-        if(direita){
-            xDele += remapagosMarquinhos;
-        }else if(!direita){
-            xDele -= remapagosMarquinhos;
-        }
+        transform.position = new Vector3(transform.position.x + remapagosMarquinhos, transform.position.y, transform.position.z);
     }
     private void trocaLado(){
         fota.flipX = !fota.flipX;
         direita = !direita;
+        remapagosMarquinhos = -1 * remapagosMarquinhos;
     }
 
     void OnCollisionEnter2D(Collision2D collision){
-        if((collision.gameObject.layer == Layers.blocksLayer) || 
-        (collision.gameObject.layer == Layers.limitesLayerParede) || 
+        if((collision.gameObject.layer == Layers.limitesLayerParede) || 
         (collision.gameObject.layer == Layers.triggersLayer)){
             trocaLado();
+
         }
         if(collision.gameObject.layer == Layers.playersLayer){
             //trocaLado();

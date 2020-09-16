@@ -3,15 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class FollowMe : MonoBehaviour{
-    public PlayerMovement Julia;
     public GameObject JuliaObj;
-    public PlayerMovement Kevin;
     public GameObject KevinObj;
-    public PlayerMovement Lilly;
     public GameObject LillyObj;
+    
+    PlayerMovement Lilly;
+    PlayerMovement Kevin;
+    PlayerMovement Julia;
+
+
 
     void Start(){
         transform.position = JuliaObj.transform.position;
+        Julia = JuliaObj.GetComponent<PlayerMovement>();
+        Kevin = KevinObj.GetComponent<PlayerMovement>();
+        Lilly = LillyObj.GetComponent<PlayerMovement>();
     }
     
     void LateUpdate(){

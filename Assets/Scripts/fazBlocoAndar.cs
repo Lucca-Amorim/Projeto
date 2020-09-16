@@ -7,8 +7,7 @@ public class fazBlocoAndar : MonoBehaviour{
     public float x, y, andar;
     public bool lado = false, andando = false;
     public bool voaCima = false, voaLados = false;
-    public GameObject Game;
-    public PolygonCollider2D normal; //usa como chao, vai fazer a interação com os triggers
+    public CapsuleCollider2D normal; //usa como chao, vai fazer a interação com os triggers
     public PolygonCollider2D pulaPula; //usado para descolar o player e fazer ele bater e sair da perto
 
     private int leftRight;
@@ -32,21 +31,16 @@ public class fazBlocoAndar : MonoBehaviour{
             andando = true;
             collision.collider.transform.SetParent(transform);
         }
-        
-        //if (collision.collider.GetType() == typeof(BoxCollider2D)){
-            
-        //}
+
     }
 
     void OnCollisionExit2D(Collision2D other){
-        if(other.gameObject.layer == 9){
-            other.collider.transform.SetParent(Game.transform);
+        if(other.gameObject.layer == Layers.playersLayer){
+            other.collider.transform.SetParent(null);
         }
     }
 
-    private void trocaLado(){
-        lado = !lado;
-    }
+
 
     private void movementHandler(){
         transform.position = new Vector3(x, y, transform.position.z);
@@ -68,9 +62,12 @@ public class fazBlocoAndar : MonoBehaviour{
     }
 
     private void qualLado(){
-        leftRight = Random.Range(0, 10);
-        if(leftRight % 2 ==0){
+        if(Random.value > 50f){
             trocaLado();
         }
+    }
+
+        private void trocaLado(){
+        lado = !lado;
     }
 }
