@@ -13,8 +13,8 @@ public class vidaEditor : MonoBehaviour{
 
     private void trocaEssaMerda(){
         if(Input.GetKeyDown(KeyCode.Alpha5)){
-            Health.nHearts = slotTotal;
-            Health.vida = vidaTotal;
+            //Health.nHearts = slotTotal;
+            //Health.vida = vidaTotal;
         }
     }
 

@@ -12,8 +12,8 @@ public class ColetorDeVidas : MonoBehaviour{
     }
 
     void OnCollisionEnter2D(Collision2D collision){
-        Health.nHearts += slotHearts;
-        Health.vida += vidinha;
+        Health vida = new Health();
+        vida.mudaVida(slotHearts, vidinha);
         Destroy(gameObject);
     }
 

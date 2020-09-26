@@ -391,7 +391,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   x: 0
   y: 0
-  andar: 0.04
+  andar: 0.02
   lado: 0
   andando: 0
   voaCima: 0

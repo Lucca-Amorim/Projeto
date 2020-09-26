@@ -1,21 +1,48 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System;
+using System.IO;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class Health : MonoBehaviour{
-    public static int vida;
-    public static int nHearts;
+    public int vida;
+    public int nHearts;    
     public Image[] hearts;
     public Sprite fHearts;
     public Sprite eHearts;
+    //Julia
+    int JnHearts;
+    int Jvida;
+    //Kevin
+    int KnHearts;
+    int Kvida;
+    //Lilly
+    int LnHearts;
+    int Lvida;
 
     void Start(){
         try{
-            nHearts = 3;
-            vida = 3;
+            StreamReader reader = new StreamReader("vida.txt");
+
+            string temp = reader.ReadLine();
+            JnHearts = Int32.Parse(temp);
+            temp = reader.ReadLine();
+            Jvida = Int32.Parse(temp);
+
+            temp = reader.ReadLine();
+            KnHearts = Int32.Parse(temp);
+            temp = reader.ReadLine();
+            Kvida = Int32.Parse(temp);
+
+            temp = reader.ReadLine();
+            LnHearts = Int32.Parse(temp);
+            temp = reader.ReadLine();
+            Lvida = Int32.Parse(temp);
+
+            reader.Close();
         }catch(System.Exception){
-            
+            Debug.Log("erro ao ler as vidas, ver compatibilidade com o documento de int ao string");
             throw;
         }
     }
@@ -29,7 +56,6 @@ public class Health : MonoBehaviour{
             if(vida > nHearts){
                 vida = nHearts;
             }
-
             if(i < vida){
                 hearts[i].sprite = fHearts;
             }else{
@@ -45,14 +71,37 @@ public class Health : MonoBehaviour{
     }
     void qualPlayer(){
         if(PlayerMovement.personagemStatic == "Julia"){
-            nHearts = 5;
-            vida = 4;
+            nHearts = JnHearts;
+            vida = Jvida;
         }else if(PlayerMovement.personagemStatic == "Kevin"){
-            nHearts = 6;
-            vida = 5;
+            nHearts = KnHearts;
+            vida = Kvida;
         }else if(PlayerMovement.personagemStatic == "Lilly"){
-            nHearts = 2;
-            vida = 1;
+            nHearts = LnHearts;
+            vida = Lvida;
         }
     }
+
+    public void mudaVida(int slots, int vidinha){
+        PlayerMovement temp = new PlayerMovement();
+        switch(temp.personagem){
+            case "Julia":
+                JnHearts += slots;
+                Jvida += vidinha;
+                break;
+            case "Kevin":
+                KnHearts += slots;
+                Kvida += vidinha;
+                break;
+            case "Lilly":
+                LnHearts += slots;
+                Lvida += vidinha;
+                break;
+            default:
+                Debug.Log("nada");
+                break;
+        }
+        Debug.Log(JnHearts);
+    }
+    
 }
