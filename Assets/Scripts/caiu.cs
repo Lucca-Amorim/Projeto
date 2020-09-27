@@ -31,7 +31,7 @@ public class caiu : MonoBehaviour{
 
     public void OnCollisionStay2D(Collision2D collision){
         if(collision.gameObject.layer == Layers.playersLayer){
-		    if(Input.GetKeyDown(KeyCode.E)){
+            if(Input.GetKeyDown(KeyCode.E)){
                 caindo = true;
             }
         }

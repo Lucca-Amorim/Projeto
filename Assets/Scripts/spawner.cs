@@ -7,7 +7,7 @@ public class spawner : MonoBehaviour{
     Transform pos;
     float x, y;
     bool feito;
-    bool esquerda;
+    public bool esquerda;
     int lado;
 
     void Awake(){

@@ -46,6 +46,12 @@ public class Health : MonoBehaviour{
             throw;
         }
     }
+
+    void Update() {
+        if(Input.GetKeyDown(KeyCode.G)){
+            grava();
+        }
+    }
     void LateUpdate(){
         heartLoader();
     }
@@ -84,7 +90,7 @@ public class Health : MonoBehaviour{
 
     public void mudaVida(int slots, int vidinha){
         PlayerMovement temp = new PlayerMovement();
-        switch(temp.personagem){
+        switch(PlayerMovement.personagemStatic){
             case "Julia":
                 JnHearts += slots;
                 Jvida += vidinha;
@@ -103,5 +109,16 @@ public class Health : MonoBehaviour{
         }
         Debug.Log(JnHearts);
     }
-    
+    public void grava(){
+        StreamWriter writer = new StreamWriter("vida.txt");
+        writer.WriteLine(JnHearts);
+        writer.WriteLine(Jvida);
+
+        writer.WriteLine(KnHearts);
+        writer.WriteLine(Kvida);
+
+        writer.WriteLine(LnHearts);
+        writer.WriteLine(Lvida);
+        writer.Close();
+    }
 }
