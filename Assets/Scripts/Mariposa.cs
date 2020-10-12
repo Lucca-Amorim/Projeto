@@ -5,10 +5,10 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(BoxCollider2D))]
 public class Mariposa : enemego{
-    new int vida;
+    int vida;
     
     void start(){
-        vida = enemego.vida;
+        vida = 3;
     }
     
 

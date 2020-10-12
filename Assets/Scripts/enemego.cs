@@ -4,12 +4,12 @@ using UnityEngine;
 
 [RequireComponent(typeof(SpriteRenderer))]
 
-public abstract class enemego : MonoBehaviour{
-    public SpriteRenderer fota;
+public class enemego : MonoBehaviour{
+    SpriteRenderer fota;
     private float xDele, yDele;
     public float remapagosMarquinhos;
     protected bool direita = true;
-    public static int vida = 10;
+    public int vida;
 
     void Awake(){
         fota = GetComponent<SpriteRenderer>();
@@ -22,9 +22,13 @@ public abstract class enemego : MonoBehaviour{
     void LateUpdate(){
         cuidaDeAndar();
         
+        
     }
-    private void cuidaDeAndar(){
+    public void cuidaDeAndar(){
         transform.position = new Vector3(transform.position.x + remapagosMarquinhos, transform.position.y, transform.position.z);
+        if(vida <= 0){
+            GameObject.Destroy(this.gameObject);
+        }
     }
     private void trocaLado(){
         fota.flipX = !fota.flipX;
@@ -40,6 +44,13 @@ public abstract class enemego : MonoBehaviour{
         }
         if(collision.gameObject.layer == Layers.playersLayer){
             //trocaLado();
+        }
+    }
+
+    public void tiraVd(int dano){
+        vida -= dano;
+        if(vida <= 0){
+            GameObject.Destroy(this.gameObject);
         }
     }
     

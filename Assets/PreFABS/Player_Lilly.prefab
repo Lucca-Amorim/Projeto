@@ -34,6 +34,7 @@ Transform:
   m_Children:
   - {fileID: 6104435113373699196}
   - {fileID: 8213603108645436458}
+  - {fileID: 3904696328914420384}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -133,6 +134,15 @@ MonoBehaviour:
   descansando: 0
   personagem: Lilly
   personagemAtual: 
+  dano: 2
+  attackPoint: {fileID: 3904696328914420384}
+  enemyLayers:
+    serializedVersion: 2
+    m_Bits: 3072
+  attackLargura: 0.87
+  attackAltura: 0.84
+  attackDelay: 2
+  delayMax: 2
 --- !u!50 &979840693028499821
 Rigidbody2D:
   serializedVersion: 4
@@ -239,4 +249,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 6317807569514812007}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1692908986119851797
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3904696328914420384}
+  m_Layer: 9
+  m_Name: AttackPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3904696328914420384
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1692908986119851797}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.28, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6317807569514812007}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -107,7 +107,6 @@ public class Health : MonoBehaviour{
                 Debug.Log("nada");
                 break;
         }
-        Debug.Log(JnHearts);
     }
     public void grava(){
         StreamWriter writer = new StreamWriter("vida.txt");

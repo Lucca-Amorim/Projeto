@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1331181543683929727}
   - component: {fileID: 1331181543683929724}
   - component: {fileID: 1331181543683929725}
-  - component: {fileID: 1331181543683929697}
+  - component: {fileID: 5689275958320293765}
   m_Layer: 10
   m_Name: Larva
   m_TagString: Untagged
@@ -151,7 +151,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1331181543683929697
+--- !u!114 &5689275958320293765
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -160,8 +160,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 1331181543683929723}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d69a4ffb490012146a901de1c3a9520e, type: 3}
+  m_Script: {fileID: 11500000, guid: a516461e0d6a28142959b90f6731c256, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fota: {fileID: 0}
   remapagosMarquinhos: 0.03
+  vida: 6
