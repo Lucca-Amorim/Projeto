@@ -8,9 +8,9 @@ public class MenuOpcoes : MonoBehaviour
 {
     public AudioMixer audioMixer;
 
-    public void SetVolume(float volume)
+    public void SetVolume(float sliderValue)
     {
-        audioMixer.SetFloat("volume", volume);
+        audioMixer.SetFloat("MusicVol", Mathf.Log10(sliderValue) * 20);
     }
 
     public void SetFullscreen (bool isFullscreen)
