@@ -63,7 +63,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\MenuOpcoes.cs" />
-    <Compile Include="Assets\PlayerAttack.cs" />
     <Compile Include="Assets\Scripts\Assisti.cs" />
     <Compile Include="Assets\Scripts\BookEffect.cs" />
     <Compile Include="Assets\Scripts\CharacterController2D.cs" />
@@ -79,9 +78,11 @@
     <Compile Include="Assets\Scripts\MenuPrincipal.cs" />
     <Compile Include="Assets\Scripts\MovimentoCircular.cs" />
     <Compile Include="Assets\Scripts\NextScene.cs" />
+    <Compile Include="Assets\Scripts\PlayerAttack.cs" />
     <Compile Include="Assets\Scripts\PlayerLife.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\ResolutionDetector.cs" />
+    <Compile Include="Assets\Scripts\SoundManagerScript.cs" />
     <Compile Include="Assets\Scripts\SystemController.cs" />
     <Compile Include="Assets\Scripts\caiu.cs" />
     <Compile Include="Assets\Scripts\enemego.cs" />

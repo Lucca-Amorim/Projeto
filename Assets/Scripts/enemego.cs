@@ -40,6 +40,7 @@ public class enemego : MonoBehaviour{
         if((collision.gameObject.layer == Layers.limitesLayerParede) || 
         (collision.gameObject.layer == Layers.triggersLayer)){
             trocaLado();
+            SoundManagerScript.PlaySound("trocaLado");
 
         }
         if(collision.gameObject.layer == Layers.playersLayer){
