@@ -9,6 +9,7 @@ public class spawner : MonoBehaviour{
     bool feito;
     public bool esquerda;
     int lado;
+    public bool spawna;
 
     void Awake(){
         pos = GetComponent<Transform>();
@@ -22,7 +23,7 @@ public class spawner : MonoBehaviour{
                 lado = -1;
             if(!esquerda)
                 lado = 1;
-            Instantiate(inimigo, new Vector3(x + lado, y + 0.5f, 0), Quaternion.identity);
+            if(spawna)Instantiate(inimigo, new Vector3(x + lado, y + 0.5f, 0), Quaternion.identity);
             feito = true;
         }
     }

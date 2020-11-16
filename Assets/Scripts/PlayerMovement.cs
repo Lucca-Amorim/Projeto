@@ -44,11 +44,18 @@ public class PlayerMovement : MonoBehaviour{
 	void Update(){
 		if(Selected & !descansando){
 			horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
+			if(horizontalMove != 0){
+				animator.SetBool("Andar", true);
+			}else{
+				animator.SetBool("Andar", false);
+				//animator.SetBool("Andar", false);
+			}
 			if(Input.GetKeyDown(KeyCode.R) && attackDelay <= 0){
 				Atacar();
 			}
 			if(Input.GetButtonDown("Jump")){
 				jump = true;
+				animator.SetBool("Jump", true);
 			}
 		}
 		if(attackDelay >= 0){
@@ -99,8 +106,6 @@ public class PlayerMovement : MonoBehaviour{
 
 	void Atacar(){
 		attackDelay += delayMax;
-        //animator.SetTrigger("Attack");
-
         Collider2D[] hitEnemies = 
 		Physics2D.OverlapBoxAll(attackPoint.position, new Vector2(
 			attackLargura, attackAltura), enemyLayers);
@@ -117,6 +122,10 @@ public class PlayerMovement : MonoBehaviour{
             return;
         Gizmos.DrawWireCube(attackPoint.position, new Vector2(attackLargura, attackAltura));
     }
+
+	public void noChao(){
+		animator.SetBool("Jump", false);
+	}
 	
 
 }

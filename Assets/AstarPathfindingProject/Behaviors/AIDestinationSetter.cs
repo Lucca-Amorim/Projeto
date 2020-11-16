@@ -17,6 +17,9 @@ namespace Pathfinding {
 		/// <summary>The object that the AI should move to</summary>
 		public Transform target;
 		IAstarAI ai;
+		public float raio;
+		public bool Desenha;
+		Vector2 inicio;
 
 		void OnEnable () {
 			ai = GetComponent<IAstarAI>();
@@ -24,6 +27,7 @@ namespace Pathfinding {
 			// This is enough in theory, but this script will also update the destination every
 			// frame as the destination is used for debugging and may be used for other things by other
 			// scripts as well. So it makes sense that it is up to date every frame.
+			inicio = transform.position;
 			if (ai != null) ai.onSearchPath += Update;
 		}
 
@@ -33,7 +37,18 @@ namespace Pathfinding {
 
 		/// <summary>Updates the AI's destination every frame</summary>
 		void Update () {
-			if (target != null && ai != null) ai.destination = target.position;
+			float distance = Vector2.Distance(target.position, transform.position);
+			if (target != null && ai != null && distance <= raio){
+				ai.destination = target.position;
+			}else{
+				ai.destination = inicio;
+			}
+		}
+		void OnDrawGizmosSelected(){
+			if(Desenha){
+				Gizmos.color = Color.red;
+				Gizmos.DrawWireSphere(transform.position, raio);
+			}
 		}
 	}
 }

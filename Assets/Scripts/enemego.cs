@@ -10,6 +10,7 @@ public class enemego : MonoBehaviour{
     public float remapagosMarquinhos;
     protected bool direita = true;
     public int vida;
+    public bool comIA;
 
     void Awake(){
         fota = GetComponent<SpriteRenderer>();
@@ -20,15 +21,15 @@ public class enemego : MonoBehaviour{
         yDele = transform.position.y;
     }
     void LateUpdate(){
-        cuidaDeAndar();
-        
+        if(comIA)   cuidaDeAndar();
+        if(vida <= 0){
+            GameObject.Destroy(this.gameObject);
+        }
         
     }
     public void cuidaDeAndar(){
         transform.position = new Vector3(transform.position.x + remapagosMarquinhos, transform.position.y, transform.position.z);
-        if(vida <= 0){
-            GameObject.Destroy(this.gameObject);
-        }
+        
     }
     private void trocaLado(){
         fota.flipX = !fota.flipX;
