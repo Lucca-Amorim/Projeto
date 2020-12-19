@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
 public class caiu : MonoBehaviour{
 
     float descida;
@@ -27,8 +26,6 @@ public class caiu : MonoBehaviour{
         }
     }
 
-
-
     public void OnCollisionStay2D(Collision2D collision){
         if(collision.gameObject.layer == Layers.playersLayer){
             if(Input.GetKeyDown(KeyCode.E)){
@@ -36,15 +33,4 @@ public class caiu : MonoBehaviour{
             }
         }
     }
-
-
-
-
-
-
-
-
-
-
-
 }

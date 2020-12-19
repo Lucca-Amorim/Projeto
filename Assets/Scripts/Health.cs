@@ -11,15 +11,49 @@ public class Health : MonoBehaviour{
     public Image[] hearts;
     public Sprite fHearts;
     public Sprite eHearts;
-    //Julia
-    int JnHearts;
-    int Jvida;
-    //Kevin
-    int KnHearts;
-    int Kvida;
-    //Lilly
-    int LnHearts;
-    int Lvida;
+    public Image Hud;
+    public Sprite[] players;
+
+    #region Char Healths
+    [Header("HP GameObject")]
+	[Space]
+        public GameObject JHealth;
+        public GameObject KHealth;
+        public GameObject LHealth;
+
+    #endregion
+    
+    #region Julia Region
+    [Header("Julia")]
+    [Space]
+        public Image[] JSlots;
+        public Sprite[] JLifes;
+        int JnHearts;
+        int Jvida;
+
+
+    #endregion
+    
+    #region Kevin Region
+    [Header("Kevin")]
+    [Space]
+        public Image[] KSlots;
+        public Sprite[] KLifes;
+        int KnHearts;
+        int Kvida;
+
+    #endregion
+
+    #region Lilly Region
+    [Header("Lilly")]
+    [Space]
+        public Image[] LSlots;
+        public Sprite[] LLifes;
+        int LnHearts;
+        int Lvida;
+
+    #endregion
+
 
     void Start(){
         try{
@@ -48,8 +82,12 @@ public class Health : MonoBehaviour{
     }
 
     void Update() {
-        if(Input.GetKeyDown(KeyCode.G)){
-            grava();
+        if(Input.GetKeyDown(KeyCode.G))     grava();
+        if(nHearts > 4)     nHearts = 4;
+		if(Input.GetButtonDown("Fire1")){
+            Debug.Log(vida);
+            Jvida -= 1;
+            Debug.Log("tirou vida");
         }
     }
     void LateUpdate(){
@@ -58,56 +96,90 @@ public class Health : MonoBehaviour{
 
     private void heartLoader(){
         qualPlayer();
-        for (int i = 0; i < hearts.Length; i++){
+        for (int i = 0; i < JSlots.Length; i++){
             if(vida > nHearts){
                 vida = nHearts;
             }
-            if(i < vida){
-                hearts[i].sprite = fHearts;
-            }else{
-                hearts[i].sprite = eHearts;
-            }
 
-            if(i < nHearts){
-                hearts[i].gameObject.SetActive(true);
+            /*
+            if(i < vida){
+                JSlots[i].sprite = JLifes[4];
             }else{
-                hearts[i].gameObject.SetActive(false);
+                JSlots[i].sprite = JLifes[0];
+            }
+            */
+            if(i > 0){
+                JSlots[i].sprite = JLifes[0];
+            }else if(i > 1){
+                JSlots[i].sprite = JLifes[1];
+            }else if(i > 2){
+                JSlots[i].sprite = JLifes[2];
             }
         }
     }
+
+    void counter(int atual){
+        if(atual > 1){
+
+        }
+    }
+
     void qualPlayer(){
         if(PlayerMovement.personagemStatic == "Julia"){
             nHearts = JnHearts;
             vida = Jvida;
+
+            Hud.sprite = players[0];
+            JHealth.gameObject.SetActive(true);
+
+            KHealth.gameObject.SetActive(false);
+            LHealth.gameObject.SetActive(false);
+
         }else if(PlayerMovement.personagemStatic == "Kevin"){
             nHearts = KnHearts;
             vida = Kvida;
+
+            Hud.sprite = players[1];
+            KHealth.gameObject.SetActive(true);
+
+            JHealth.gameObject.SetActive(false);
+            LHealth.gameObject.SetActive(false);
+
         }else if(PlayerMovement.personagemStatic == "Lilly"){
             nHearts = LnHearts;
             vida = Lvida;
+            
+            Hud.sprite = players[2];
+            LHealth.gameObject.SetActive(true);
+
+            JHealth.gameObject.SetActive(false);
+            KHealth.gameObject.SetActive(false);
         }
     }
 
+
+    #region Save/Load Vidas
     public void mudaVida(int slots, int vidinha){
-        PlayerMovement temp = new PlayerMovement();
-        switch(PlayerMovement.personagemStatic){
-            case "Julia":
-                JnHearts += slots;
-                Jvida += vidinha;
-                break;
-            case "Kevin":
-                KnHearts += slots;
-                Kvida += vidinha;
-                break;
-            case "Lilly":
-                LnHearts += slots;
-                Lvida += vidinha;
-                break;
-            default:
-                Debug.Log("nada");
-                break;
+    PlayerMovement temp = new PlayerMovement();
+    switch(PlayerMovement.personagemStatic){
+        case "Julia":
+            JnHearts += slots;
+            Jvida += vidinha;
+            break;
+        case "Kevin":
+            KnHearts += slots;
+            Kvida += vidinha;
+            break;
+        case "Lilly":
+            LnHearts += slots;
+            Lvida += vidinha;
+            break;
+        default:
+            Debug.Log("nada");
+            break;
         }
     }
+    
     public void grava(){
         StreamWriter writer = new StreamWriter("vida.txt");
         writer.WriteLine(JnHearts);
@@ -120,4 +192,6 @@ public class Health : MonoBehaviour{
         writer.WriteLine(Lvida);
         writer.Close();
     }
+    #endregion
+    
 }

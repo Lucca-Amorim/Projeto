@@ -1,0 +1,371 @@
+fileFormatVersion: 2
+guid: 877756f81048ff345b823efad8df578c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4421605475482800030
+    second: cartela_2_sem_fundo_0
+  - first:
+      213: -806279057283248124
+    second: cartela_2_sem_fundo_1
+  - first:
+      213: -6437128596926536106
+    second: cartela_2_sem_fundo_2
+  - first:
+      213: 7587671659022884178
+    second: cartela_2_sem_fundo_3
+  - first:
+      213: -2813532410543049805
+    second: cartela_2_sem_fundo_4
+  - first:
+      213: -4566602506308020431
+    second: cartela_2_sem_fundo_5
+  - first:
+      213: 1622691031126365196
+    second: cartela_2_sem_fundo_6
+  - first:
+      213: -4125583417773626909
+    second: cartela_2_sem_fundo_7
+  - first:
+      213: 1876942109696525519
+    second: cartela_2_sem_fundo_8
+  - first:
+      213: 654325271718610698
+    second: cartela_2_sem_fundo_9
+  - first:
+      213: -2796418122438800953
+    second: cartela_2_sem_fundo_10
+  - first:
+      213: 6677577981530366895
+    second: cartela_2_sem_fundo_11
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: cartela_2_sem_fundo_0
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 8857
+        width: 402
+        height: 855
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 260fce82f3d43a2c0800000000000000
+      internalID: -4421605475482800030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartela_2_sem_fundo_1
+      rect:
+        serializedVersion: 2
+        x: 1889
+        y: 8860
+        width: 402
+        height: 855
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4009bc028758fc4f0800000000000000
+      internalID: -806279057283248124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartela_2_sem_fundo_2
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 7971
+        width: 581
+        height: 817
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6566fae75a9baa6a0800000000000000
+      internalID: -6437128596926536106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartela_2_sem_fundo_3
+      rect:
+        serializedVersion: 2
+        x: 1596
+        y: 7987
+        width: 581
+        height: 817
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25d9b543c23dc4960800000000000000
+      internalID: 7587671659022884178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartela_2_sem_fundo_4
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 7119
+        width: 816
+        height: 728
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b37889ed2354f8d0800000000000000
+      internalID: -2813532410543049805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartela_2_sem_fundo_5
+      rect:
+        serializedVersion: 2
+        x: 1601
+        y: 7100
+        width: 816
+        height: 728
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1371a15273b20a0c0800000000000000
+      internalID: -4566602506308020431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartela_2_sem_fundo_6
+      rect:
+        serializedVersion: 2
+        x: 3050
+        y: 7101
+        width: 816
+        height: 728
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c04df7a35e4f48610800000000000000
+      internalID: 1622691031126365196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartela_2_sem_fundo_7
+      rect:
+        serializedVersion: 2
+        x: 4624
+        y: 7119
+        width: 709
+        height: 743
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e96c546dbbfeb6c0800000000000000
+      internalID: -4125583417773626909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartela_2_sem_fundo_8
+      rect:
+        serializedVersion: 2
+        x: 6035
+        y: 7116
+        width: 816
+        height: 728
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc40f6087ec3c0a10800000000000000
+      internalID: 1876942109696525519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartela_2_sem_fundo_9
+      rect:
+        serializedVersion: 2
+        x: 7482
+        y: 7121
+        width: 816
+        height: 728
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a07495c2e51a41900800000000000000
+      internalID: 654325271718610698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cartela_2_sem_fundo_10
+      rect:
+        serializedVersion: 2
+        x: 8915
+        y: 7087
+        width: 816
+        height: 728
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c90290a8802139d0800000000000000
+      internalID: -2796418122438800953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
