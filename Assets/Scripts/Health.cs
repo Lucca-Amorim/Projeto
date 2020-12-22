@@ -20,6 +20,8 @@ public class Health : MonoBehaviour{
         public GameObject JHealth;
         public GameObject KHealth;
         public GameObject LHealth;
+        Image[] tempSlots;
+        Sprite[] tempLife;
 
     #endregion
     
@@ -83,11 +85,9 @@ public class Health : MonoBehaviour{
 
     void Update() {
         if(Input.GetKeyDown(KeyCode.G))     grava();
-        if(nHearts > 4)     nHearts = 4;
-		if(Input.GetButtonDown("Fire1")){
-            Debug.Log(vida);
-            Jvida -= 1;
-            Debug.Log("tirou vida");
+        if(nHearts > 16)     nHearts = 16;
+		if(Input.GetButton("Fire1") & Input.GetButtonDown("Jump")){
+            DamageP(PlayerMovement.personagemStatic);
         }
     }
     void LateUpdate(){
@@ -96,7 +96,7 @@ public class Health : MonoBehaviour{
 
     private void heartLoader(){
         qualPlayer();
-        for (int i = 0; i < JSlots.Length; i++){
+        for (int i = 0; i < 4; i++){
             if(vida > nHearts){
                 vida = nHearts;
             }
@@ -107,7 +107,6 @@ public class Health : MonoBehaviour{
             }else{
                 JSlots[i].sprite = JLifes[0];
             }
-            */
             if(i > 0){
                 JSlots[i].sprite = JLifes[0];
             }else if(i > 1){
@@ -115,13 +114,125 @@ public class Health : MonoBehaviour{
             }else if(i > 2){
                 JSlots[i].sprite = JLifes[2];
             }
+            */
+
+            /*  isso deve estar muito pesado, mas não consigo pensar em outra forma de fazer isso    */
+            switch(PlayerMovement.personagemStatic){
+                case "Julia":
+                    tempSlots = JSlots;
+                    tempLife = JLifes;
+                    break;
+                case "Kevin":
+                    tempSlots = KSlots;
+                    tempLife = KLifes;
+                    break;
+                case "Lilly":
+                    tempSlots = LSlots;
+                    tempLife = LLifes;
+                    break;
+                default:
+                    break;
+            }
+            /*  poderia usar if, mas switch é mais lefe que if, entaao... */
+            switch(vida){
+                case 16:
+                    tempSlots[3].sprite = tempLife[4];
+                    break;
+                case 15:
+                    tempSlots[3].sprite = tempLife[3];
+                    break;
+                case 14:
+                    tempSlots[3].sprite = tempLife[2];
+                    break;
+                case 13:
+                    tempSlots[3].sprite = tempLife[1];
+                    break;
+                case 12:
+                    tempSlots[3].sprite = tempLife[0];
+                    break;
+                case 11:
+                    tempSlots[2].sprite = tempLife[3];
+                    tempSlots[3].sprite = tempLife[0];
+                    break;
+                case 10:
+                    tempSlots[2].sprite = tempLife[2];
+                    tempSlots[3].sprite = tempLife[0];
+                    break;
+                case 9:
+                    tempSlots[2].sprite = tempLife[1];
+                    tempSlots[3].sprite = tempLife[0];
+                    break;
+                case 8:
+                    tempSlots[2].sprite = tempLife[0];
+                    tempSlots[3].sprite = tempLife[0];
+                    break;
+                case 7:
+                    tempSlots[1].sprite = tempLife[3];
+                    tempSlots[3].sprite = tempLife[0];
+                    tempSlots[2].sprite = tempLife[0];
+                    break;
+                case 6:
+                    tempSlots[1].sprite = tempLife[2];
+                    tempSlots[3].sprite = tempLife[0];
+                    tempSlots[2].sprite = tempLife[0];
+                    break;
+                case 5:
+                    tempSlots[1].sprite = tempLife[1];
+                    tempSlots[3].sprite = tempLife[0];
+                    tempSlots[2].sprite = tempLife[0];
+                    break;
+                case 4:
+                    tempSlots[1].sprite = tempLife[0];
+                    tempSlots[3].sprite = tempLife[0];
+                    tempSlots[2].sprite = tempLife[0];
+                    break;
+                case 3:
+                    tempSlots[0].sprite = tempLife[3];
+                    tempSlots[3].sprite = tempLife[0];
+                    tempSlots[2].sprite = tempLife[0];
+                    tempSlots[1].sprite = tempLife[0];
+                    break;
+                case 2:
+                    tempSlots[0].sprite = tempLife[2];
+                    tempSlots[3].sprite = tempLife[0];
+                    tempSlots[2].sprite = tempLife[0];
+                    tempSlots[1].sprite = tempLife[0];
+                    break;
+                case 1:
+                    tempSlots[0].sprite = tempLife[1];
+                    tempSlots[3].sprite = tempLife[0];
+                    tempSlots[2].sprite = tempLife[0];
+                    tempSlots[1].sprite = tempLife[0];
+                    break;
+                case 0:
+                    tempSlots[0].sprite = tempLife[0];
+                    tempSlots[1].sprite = tempLife[0];
+                    tempSlots[2].sprite = tempLife[0];
+                    tempSlots[3].sprite = tempLife[0];
+                    break;
+                default:
+                    break;
+            }
+            //if(vida < 16){
+            //}
         }
     }
 
-    void counter(int atual){
-        if(atual > 1){
-
+    public void DamageP(String nome){
+        switch(nome){
+            case "Julia":
+                Jvida -=1;
+                break;
+            case "Kevin":
+                Kvida -=1;
+                break;
+            case "Lilly":
+                Lvida -=1;
+                break;
+            default:
+                break;
         }
+        
     }
 
     void qualPlayer(){
@@ -175,7 +286,6 @@ public class Health : MonoBehaviour{
             Lvida += vidinha;
             break;
         default:
-            Debug.Log("nada");
             break;
         }
     }
