@@ -1,0 +1,740 @@
+fileFormatVersion: 2
+guid: 0be69bab27e3d974cbe9752b2555d244
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1968768437722652107
+    second: folha_com_hud_e_vidas_1_corte_0
+  - first:
+      213: -4385919740937221161
+    second: folha_com_hud_e_vidas_1_corte_1
+  - first:
+      213: -1153317633579383187
+    second: folha_com_hud_e_vidas_1_corte_2
+  - first:
+      213: -4598325669280061452
+    second: folha_com_hud_e_vidas_1_corte_3
+  - first:
+      213: -7379400705419181208
+    second: folha_com_hud_e_vidas_1_corte_4
+  - first:
+      213: 3880943491107767049
+    second: folha_com_hud_e_vidas_1_corte_5
+  - first:
+      213: -3687681351733327711
+    second: folha_com_hud_e_vidas_1_corte_6
+  - first:
+      213: -5764709942770570939
+    second: folha_com_hud_e_vidas_1_corte_7
+  - first:
+      213: -7288568206446687203
+    second: folha_com_hud_e_vidas_1_corte_8
+  - first:
+      213: 9161543462679824754
+    second: folha_com_hud_e_vidas_1_corte_9
+  - first:
+      213: 4444168603642385234
+    second: folha_com_hud_e_vidas_1_corte_10
+  - first:
+      213: -1679206228795404460
+    second: folha_com_hud_e_vidas_1_corte_11
+  - first:
+      213: -3337012441246820984
+    second: folha_com_hud_e_vidas_1_corte_12
+  - first:
+      213: 4883283644397460472
+    second: folha_com_hud_e_vidas_1_corte_13
+  - first:
+      213: -7104398560705271724
+    second: folha_com_hud_e_vidas_1_corte_14
+  - first:
+      213: 7364460766850166899
+    second: folha_com_hud_e_vidas_1_corte_15
+  - first:
+      213: 5262459360990948803
+    second: folha_com_hud_e_vidas_1_corte_16
+  - first:
+      213: -6371500132056477542
+    second: folha_com_hud_e_vidas_1_corte_17
+  - first:
+      213: -7917979299982243166
+    second: folha_com_hud_e_vidas_1_corte_18
+  - first:
+      213: -4774295404209524316
+    second: folha_com_hud_e_vidas_1_corte_19
+  - first:
+      213: -8721240971898799921
+    second: folha_com_hud_e_vidas_1_corte_20
+  - first:
+      213: -713494674280735999
+    second: folha_com_hud_e_vidas_1_corte_21
+  - first:
+      213: 2775156580874348245
+    second: folha_com_hud_e_vidas_1_corte_22
+  - first:
+      213: -1127570189820198992
+    second: folha_com_hud_e_vidas_1_corte_23
+  - first:
+      213: -8466427347969111257
+    second: folha_com_hud_e_vidas_1_corte_24
+  - first:
+      213: -7134362791458411052
+    second: folha_com_hud_e_vidas_1_corte_25
+  - first:
+      213: 8362540650636775594
+    second: folha_com_hud_e_vidas_1_corte_26
+  - first:
+      213: -285310049481771712
+    second: folha_com_hud_e_vidas_1_corte_27
+  - first:
+      213: -8898073925651055287
+    second: folha_com_hud_e_vidas_1_corte_28
+  - first:
+      213: 5974323960526884193
+    second: folha_com_hud_e_vidas_1_corte_29
+  - first:
+      213: 571542881924616264
+    second: folha_com_hud_e_vidas_1_corte_30
+  - first:
+      213: -4243263258472429547
+    second: folha_com_hud_e_vidas_1_corte_31
+  - first:
+      213: -2931259506403199677
+    second: folha_com_hud_e_vidas_1_corte_32
+  - first:
+      213: 7887457442756597741
+    second: folha_com_hud_e_vidas_1_corte_0
+  - first:
+      213: 5308144008413942923
+    second: folha_com_hud_e_vidas_1_corte_1
+  - first:
+      213: 1393392299143468741
+    second: folha_com_hud_e_vidas_1_corte_2
+  - first:
+      213: -1428757648622811315
+    second: folha_com_hud_e_vidas_1_corte_3
+  - first:
+      213: -439440309824048223
+    second: folha_com_hud_e_vidas_1_corte_4
+  - first:
+      213: -9221800077133981820
+    second: folha_com_hud_e_vidas_1_corte_5
+  - first:
+      213: -3530269419759627949
+    second: folha_com_hud_e_vidas_1_corte_6
+  - first:
+      213: -3177262693186606600
+    second: folha_com_hud_e_vidas_1_corte_7
+  - first:
+      213: -6454592809235632953
+    second: folha_com_hud_e_vidas_1_corte_8
+  - first:
+      213: 1670542100936609662
+    second: folha_com_hud_e_vidas_1_corte_9
+  - first:
+      213: -6924566131916177229
+    second: folha_com_hud_e_vidas_1_corte_10
+  - first:
+      213: -5989091255433322837
+    second: folha_com_hud_e_vidas_1_corte_11
+  - first:
+      213: 7902119296135520299
+    second: folha_com_hud_e_vidas_1_corte_12
+  - first:
+      213: -6312158253938616994
+    second: folha_com_hud_e_vidas_1_corte_13
+  - first:
+      213: 189200257854242486
+    second: folha_com_hud_e_vidas_1_corte_14
+  - first:
+      213: -7486356167027860451
+    second: folha_com_hud_e_vidas_1_corte_15
+  - first:
+      213: 1916271959002557115
+    second: folha_com_hud_e_vidas_1_corte_16
+  - first:
+      213: -2242385320676013341
+    second: folha_com_hud_e_vidas_1_corte_17
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: folha_com_hud_e_vidas_1_corte_0
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 1647
+        width: 1245
+        height: 387
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de7948031c0e57d60800000000000000
+      internalID: 7887457442756597741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: folha_com_hud_e_vidas_1_corte_1
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 1409
+        width: 213
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8491261ad05aa940800000000000000
+      internalID: 5308144008413942923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: folha_com_hud_e_vidas_1_corte_2
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 1433
+        width: 188
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c6163fd9e2565310800000000000000
+      internalID: 1393392299143468741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: folha_com_hud_e_vidas_1_corte_3
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 1427
+        width: 186
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4707bb0d780c2ce0800000000000000
+      internalID: -1428757648622811315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: folha_com_hud_e_vidas_1_corte_4
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 1427
+        width: 167
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a333f0dd5bc6e9f0800000000000000
+      internalID: -439440309824048223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: folha_com_hud_e_vidas_1_corte_5
+      rect:
+        serializedVersion: 2
+        x: 1173
+        y: 1437
+        width: 149
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48752c460b5950080800000000000000
+      internalID: -9221800077133981820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: folha_com_hud_e_vidas_1_corte_6
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 976
+        width: 1155
+        height: 410
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3519dc9baa6f10fc0800000000000000
+      internalID: -3530269419759627949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: folha_com_hud_e_vidas_1_corte_7
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 757
+        width: 212
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f9e2861a6818e3d0800000000000000
+      internalID: -3177262693186606600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: folha_com_hud_e_vidas_1_corte_8
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 758
+        width: 213
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cc28b3b90eac66a0800000000000000
+      internalID: -6454592809235632953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: folha_com_hud_e_vidas_1_corte_9
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 759
+        width: 214
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7f49ac9035fe2710800000000000000
+      internalID: 1670542100936609662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: folha_com_hud_e_vidas_1_corte_10
+      rect:
+        serializedVersion: 2
+        x: 1141
+        y: 758
+        width: 213
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b08f6b7acff6ef90800000000000000
+      internalID: -6924566131916177229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: folha_com_hud_e_vidas_1_corte_11
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 349
+        width: 1156
+        height: 343
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bae9f781c3972eca0800000000000000
+      internalID: -5989091255433322837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: folha_com_hud_e_vidas_1_corte_12
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 85
+        width: 222
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b20eae2f1a7f9ad60800000000000000
+      internalID: 7902119296135520299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: folha_com_hud_e_vidas_1_corte_13
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 85
+        width: 221
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5550f3e285b668a0800000000000000
+      internalID: -6312158253938616994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: folha_com_hud_e_vidas_1_corte_14
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 85
+        width: 221
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6be70d0d1ac20a200800000000000000
+      internalID: 189200257854242486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: folha_com_hud_e_vidas_1_corte_15
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 87
+        width: 219
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1cdf320bbe1b1890800000000000000
+      internalID: -7486356167027860451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: folha_com_hud_e_vidas_1_corte_16
+      rect:
+        serializedVersion: 2
+        x: 1136
+        y: 85
+        width: 221
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbaa361a137f79a10800000000000000
+      internalID: 1916271959002557115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: folha_com_hud_e_vidas_1_corte_17
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 208
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ea4e877e6271e0e0800000000000000
+      internalID: -2242385320676013341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: folha_com_hud_e_vidas_1_corte_18
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 208
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2aa89a527cfad1290800000000000000
+      internalID: -7917979299982243166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: folha_com_hud_e_vidas_1_corte_19
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 208
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a1bf4b00ab4ebdb0800000000000000
+      internalID: -4774295404209524316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: folha_com_hud_e_vidas_1_corte_20
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 210
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc8b36d0b8de7f680800000000000000
+      internalID: -8721240971898799921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: folha_com_hud_e_vidas_1_corte_21
+      rect:
+        serializedVersion: 2
+        x: 1357
+        y: 208
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10b1d5ebf582916f0800000000000000
+      internalID: -713494674280735999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: folha_com_hud_e_vidas_1_corte_22
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 762
+        width: 212
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d66a17f436538620800000000000000
+      internalID: 2775156580874348245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
